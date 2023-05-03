@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(Images/home.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav
+{
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img
+{
+    width: 150px;
+}
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 6px 12px;
+    position: relative;
+}
+.nav-links ul li a
+{
+    color: blanchedalmond;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+.nav-links ul li::after
+{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.4s ease-out;
+}
+.nav-links ul li:hover::after
+{
+    width: 100%;
+    background-position: left;
+}
+.text-box
+{
+    width: 90%;
+    color: blanchedalmond;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1
+{
+    font-size: 60px;
+}
+.text-box p
+{
+    margin: 10px 50px 40px;
+    font-size: 18px;
+    color: blanchedalmond;
+}
+.hero-btn
+{
+    display: inline-block;
+    text-decoration: none;
+    color: blanchedalmond;
+    border: 5px solid #fff;
+    padding: 12px 32px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover
+{
+    border: 6px solid #f44336;
+    background: #f44336;
+    transition: 0.7s; 
+}
+
+nav .fa
+{
+    display: none;
+}
+
+@media(max-width: 700px)
+{
+    .text-box h1
+{
+    font-size: 20px;
+}
+    .nav-links ul li
+{
+    display: block;    
+}
+    .nav-links
+{
+    position: fixed;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+    nav .fa
+{
+    display: block;
+    color: blanchedalmond;
+    margin: 10px;
+    font-size: 40x;
+    cursor: pointer;
+}
+    .nav-links ul
+{
+    padding: 30px;
+}
+}
+
+/*------THIS SITE OFFERS-----*/
+
+.OFFER
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+p
+{
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row
+{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.offer-col
+{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3
+{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.offer-col:hover
+{
+    box-shadow: 0 0 30px 0px rgba(0,0,0,0.5);
+}
+
+@media(max-width: 700px)
+{
+    .row
+    {
+        flex-direction: column;
+    }
+}
+
+/*-------footer---------*/
+.footer
+{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4
+{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa
+{
+    color: red;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*---------about me page----------*/
+.sub-header
+{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: red;
+}
+.sub-header h1
+{
+    margin-top: 100px;
+}
+.about-me
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col
+{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img
+{
+    width: 100%;
+}
+.about-col h1
+{
+    padding-top: 0;
+}
+.about-col p
+{
+    padding: 15px 0 25px;
+}
+
+.red-btn
+{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: red;
+}
+.red-btn:hover
+{
+    color: white;
+}
+
+/*-----ANIME PAGE-----*/
+table, th, td
+{
+    border: 2px solid red;
+    border-collapse: collapse;
+}
+th, td
+{
+    background-color: ghostwhite;
+}
+th, td
+{
+    text-align: center;
+}
+tr:hover td
+{
+    background-color: skyblue;
+}
+
+/*----------contact me page-------------*/
+
+.location
+{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe
+{
+    width: 100%;
+}
+.Contact-Me
+{
+    width: 80%;
+    margin: auto;
+}
+.Contact-Col
+{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.Contact-Col div
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.Contact-Col div p
+{
+    padding: 0;
+}
+.Contact-Col div h5
+{
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 600;
+}
+input
+{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+textarea
+{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/*---------WALLPAPERS----------*/
+.mains
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mains .Wall
+{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.mains .Wall img
+{
+    width: 100%;
+    height: 400px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+/*--------HOVER AND TEXT ON IMAGE----------*/
+/*-.img1
+{
+    display: block;
+    width: 100%;
+}
+.image__overlay
+{
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: 32.5%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+}-*/
+
+
+/*---------NARUTO WALLPAPER-----------*/
+.mains
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mains .Nar
+{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.mains .Nar img
+{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+.next-btn
+{
+    margin: 40px 0px 70px 0px;
+    background-color: red;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+.next-btn a
+{
+    color: antiquewhite;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+/*----------MHA WALLPAPERS------*/
+
+.mains .MHA
+{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.mains .MHA img
+{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+/*-----DEMON SLAYER WALLPAPERS------*/
+
+.mains .DEMONSLAYER
+{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.mains .DEMONSLAYER img
+{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+/*---------------SOUND ADDING-----------*/
+.sound-btn
+{
+    border: none;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
